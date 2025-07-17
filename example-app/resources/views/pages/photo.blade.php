@@ -1,3 +1,7 @@
+@extends('Layouts.master')
+
+@section('content')
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +11,17 @@
 </head>
 <body>
     <h1>This is a photo page</h1>
+    <img src="images/flower.jpg">
 
-    <a href="/home">Home Page</a>
-    {{$age}}
-    
+
 </body>
 </html>
+
+@endsection
+
+
+
+
+
+
+

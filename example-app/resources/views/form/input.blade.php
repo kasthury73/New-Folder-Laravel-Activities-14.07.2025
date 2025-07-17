@@ -11,10 +11,18 @@
 
     <style>
         .hello{
-            width: 30%;
+            width: 35.2%;
             background-color: rgb(143, 224, 230);
             text-align: justify;
         }
+
+        td{
+            font-family: Times New Roman;
+            font-size:150%;
+            color: rgb(9, 9, 48);
+        }
+
+        
 
 
     </style>
@@ -33,12 +41,17 @@
         <tr>
             <td><label for="text">Text</label></td>
             <td><input type="text" name="name" id="text"></td>
+
         </tr>
+
 
         <tr>
             <td><label for="Password">Password</label></td>
             <td><input type="Password" name="password" id="Password" ></td>
+
         </tr>
+
+
 
         <tr>
             <td><label for="Email">Email</label></td>
@@ -122,7 +135,7 @@
         </tr>
         <tr>
             <td><lable for="Image">image</lable></td>
-            <td><input type="Image" name="image" id="Image" src="{{asset('images/flower.jpg')}}"></td>
+            <td><input type="Image" name="image" id="Image" src="{{asset('images/jung.jpg')}}" style="width: 60%"></td>
         </tr>
 
 
@@ -136,7 +149,7 @@
         <td lable for="Select">Select</lable></td>
         <td>
         <select name="select[]" id="select" multiple>
-            <option value="10A" selected>10A</option>
+            <option value="10A">10A</option>
             <option value="11A">11A</option>
             <option value="12A">12A</option>
         </select>

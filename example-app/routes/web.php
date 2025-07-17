@@ -164,9 +164,28 @@ Route::post('/form',function(Request $request){
 });
 
 
+// Route::get('/master',function(){
+//     return view('Layouts/master');
+// });
+
+Route::get('home',function(){
+    return view('home');
+});
+
+
+Route::get('about',function(){
+    return view('pages/about');
+});
 
 
 
+Route::get('photo',function(){
+    return view('pages/photo');
+});
+
+Route::get('contact',function(){
+    return view('pages/contact');
+});
 
 
 

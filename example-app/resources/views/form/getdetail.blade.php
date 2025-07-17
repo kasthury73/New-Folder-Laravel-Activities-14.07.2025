@@ -10,8 +10,14 @@
     <style>
         .hello{
             width: 30%;
-            background-color: rgb(143, 224, 230);
+            background-color: rgb(141, 189, 226);
             text-align: justify;
+        }
+
+        td{
+            font-family: Times New Roman;
+            font-size:150%;
+            color: rgb(9, 9, 48);
         }
 
 
@@ -20,7 +26,7 @@
 
 <body>
 
-    <h1 style="color: brown">HTML FORM</h1>
+    <h1 style="color: brown">HTML FORM OUTPUTS</h1>
     <div class="hello">
 
     <fieldset>
@@ -121,7 +127,7 @@
         </tr>
         <tr>
             <td><lable for="Image">image</lable></td>
-            <td><input type="Image" name="image" id="Image" src="{{asset('images/flower.jpg')}}"></td>
+            <td><input type="Image" name="image" id="Image" src="{{asset('images/jung.jpg')}}" style="width: 60%"></td>
         </tr>
 
 
@@ -134,7 +140,7 @@
         <tr>
         <td lable for="Select">Select</lable></td>
         <td>
-        <select name="select[]" id="select" multiple>
+        <select name="select[]" id="select" multiple >
             <option value="10A" @if(in_array('10A',$select)) selected @endif>10A</option>
             <option value="11A" @if(in_array('11A',$select)) selected @endif>11A</option>
             <option value="12A" @if(in_array('12A',$select)) selected @endif>12A</option>

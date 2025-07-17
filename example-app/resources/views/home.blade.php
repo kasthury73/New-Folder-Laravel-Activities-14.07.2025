@@ -1,16 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>This is a home page</h1>
+@extends('Layouts.master')
 
-    <a href="/about">About</a>
-    <a href="/contact">Contact</a>
-    <a href="/photo">Photo</a>
-    {{$name}}
-</body>
-</html>
+@section('sidebar')
+
+@parent
+
+@endsection
+
+@section('content')
+
+<h1>Welcome To My Home Page</h1>
+<img src="images/jhope.jpg">
+
+@endsection
+
+
+
+
+
+
