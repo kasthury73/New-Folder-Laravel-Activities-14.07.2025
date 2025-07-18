@@ -1,27 +1,37 @@
-<html>
-    <head>
 
-        <title>Table</title>
-        <style>
+@section('css')
+
+            <style>
             table{
                 background-color: rgb(245, 244, 242);
                 font-family: 'Times New Roman';
-                width: 50%;
+                width:50%;
                 text-align:center;
              }
 
              h1{
-                color: black ;
+                color: black;
                 text-align: left;
                 font-family: 'Times New Roman';
              }
+             </style>
 
 
-        </style>
-    </head>
-    <body>
+@endsection
 
-        <table border="3"  align="left" >
+
+
+    {{-- </head> --}}
+
+    @extends('Layouts.master')
+
+    @section('content')
+
+
+
+
+
+        <table border="3"  align="left">
             <h1><u>Employee List</u></h1>
             <tr>
                 <th>1000</th>
@@ -33,7 +43,7 @@
             </tr>
             <tr>
                 <td>1001</td>
-                
+
                 <td>Jhope</td>
                 <td>29</td>
                 <td>+8224589745</td>
@@ -65,7 +75,11 @@
             </tr>
 
         </table>
-    </body>
-</html>
+
+
+    @endsection
+
+
+
 
 

@@ -187,7 +187,21 @@ Route::get('contact',function(){
     return view('pages/contact');
 });
 
+Route::get('employee',function(){
+    return view('employee/employeelist');
+});
 
+
+// Route::get('input',function(){
+//     return view('form/input');
+// });
+
+
+
+
+// Route::get('/employeelist',function(){
+//     return view('employee/employeelist');
+// });
 
 
 

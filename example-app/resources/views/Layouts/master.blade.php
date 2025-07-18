@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    @vite(['resources/scss/Style.scss', 'resources/js/app.js'])
+
+    @yield('css')
+
+    @yield('form')
 
     <style>
 
@@ -31,6 +35,19 @@
             padding:10px ;
         }
 
+        #link{
+            color:#113F67;
+        }
+        #link1{
+            color:#0ABAB5;
+        }
+        #link2{
+            color: #5F8B4C;
+        }
+        #link3{
+            color:#DD88CF;
+        }
+
         #content{
             width:80%;
             float: left;
@@ -44,20 +61,19 @@
 
         #footer{
             width:100%;
-            float: both;
             height: 125px;
             background-color:#EF88AD;
             text-align:center;
             font-size: 25px;
             font-family: 'Times New Roman', Times, serif;
             padding:10px ;
-
+            float: both;
         }
 
     </style>
 </head>
 
-<body>
+
 
     <div class="container-fluid">
         <div class="row">
@@ -68,10 +84,16 @@
             <div class="col-1" id="sidebar">
                 @section('sidebar')
             <ol>
-                <li><a href="home">home</a></li>
-                <li><a href="about">about</a></li>
-                <li><a href="photo">photo</a></li>
-                <li><a href="contact">contact</a></li>
+                <li><a href="home" id="link">home</a></li>
+                {{-- <li><a href="home">home</a></li> --}}
+                <li><a href="about" id="link1">about</a></li>
+                {{-- <li><a href="about">about</a></li> --}}
+                <li><a href="photo" id="link2">photo</a></li>
+                {{-- <li><a href="photo">photo</a></li> --}}
+                <li><a href="contact" id="link3">contact</a></li>
+                {{-- <li><a href="contact">contact</a></li> --}}
+                <li><a href="employee" id="link3">employeelist</a></li>
+              
             </ol>
             @Show
         </div>
@@ -84,8 +106,7 @@
         </div>
     </div>
 
-</body>
-</html>
+
 
 {{-- <table >
 

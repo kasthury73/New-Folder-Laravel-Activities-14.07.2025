@@ -1,8 +1,24 @@
-@extends('Layouts.master')
+@extends('Layouts.main')
 
 @section('content')
 
-<!DOCTYPE html>
+
+
+    <h1>This is a about page</h1>
+    <img src="images/jin.jpg">
+
+
+
+
+</body>
+</html>
+
+@endsection
+
+
+
+
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,13 +27,4 @@
 
 
 </head>
-<body>
-    <h1>This is a about page</h1>
-    <img src="images/jin.jpg">
-
-</body>
-</html>
-
-@endsection
-
-
+<body> --}}
