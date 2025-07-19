@@ -1,10 +1,12 @@
+
+
 @extends('Layouts.main')
 
-{{-- @section('sidebar')
+ @section('sidebar')
 
 @parent
 
-@endsection --}}
+@endsection
 
 @section('content')
 

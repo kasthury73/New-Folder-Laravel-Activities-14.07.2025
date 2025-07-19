@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
-
 </head>
 
 <body>
-
-<form action="get">
+    <form action="delete" method="post">
     @csrf
-    @method('get')
+    @method('delete')
     <input type="text" name="fname" id="fname">
-    <input type="submit" value="get">
+    <input type="submit" value="delete" >
 </form>
-
 </body>
 </html>

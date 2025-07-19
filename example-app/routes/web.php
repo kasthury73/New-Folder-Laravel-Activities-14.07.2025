@@ -1,15 +1,20 @@
 <?php
-
 use Illuminate\Support\Facades\Route;
 
 use Illuminate\Http\Request;
+
+
+// -----------------------------------------------------------------
+
 
 // Route::get('/', function () {
 //     return view('employee/employeelist');
 // });
 
-
 // Route::view('employeedetail', 'employee/employeedetail');
+// -----------------------------------------------------------------
+
+
 
 // Route::get('employeedetail/{id}/{name}/{age}/{phone_no}',function($id,$name,$age,$phone_no){
 //     return view('employee/employeedetail',['id'=>$id,'name'=>$name,'age'=>$age,'phone_no'=>$phone_no]);
@@ -105,8 +110,109 @@ use Illuminate\Http\Request;
 
 
 
-// Route::get('home',function(){
-//     return "Welcome get";
+// Route::get('get',function(){
+//     return view ("form/get-form");
+// });
+
+// Route::get('get',function(){
+//     return ();
+// });
+
+
+// -------------------------------------------------------------------------
+
+Route::get('my-form-post',function(){
+    return view('form/post-form');
+});
+
+// Route::post('post',function(){
+//     return ("post method");
+// });
+
+// ----------------------------------------
+
+Route::get('my-form-get',function(){
+    return view('form/get-form');
+});
+
+// Route::get('get',function(){
+//     return ("get method");
+// });
+
+// -------------------------------------------
+
+Route::get('my-form-patch',function(){
+    return view('form/patch-form');
+});
+
+// Route::patch('patch',function(){
+//     return('patch method');
+// });
+
+// ----------------------------------------------
+
+Route::get('my-form-put',function(){
+    return view('form/put-form');
+});
+
+Route::put('put',function(){
+    return('put method');
+});
+
+// --------------------------------------------------
+
+Route::get('my-form-delete',function(){
+    return view('form/delete-form');
+});
+
+// Route::delete('delete',function(){
+//     return ('delete method');
+// });
+
+// ----------------------------------------------------
+
+// -------------------------------------------------------------------------
+
+// Route::get('my-form-put',function(){
+//     return view("form/put-form");
+// });
+
+Route::put('put',function(Request $request){
+    dd($request -> input ('fname'));
+});
+
+// ----------------------------------------
+
+Route::post('post',function(Request $request){
+    dd($request -> input ('fname'));
+});
+
+// --------------------------------------------
+
+Route::patch('patch', function(Request  $request){
+    dd($request -> input ('fname'));
+});
+
+// -------------------------------------------------
+
+Route::get('get', function(Request $request){
+    dd($request -> input ('fname'));
+});
+
+// -----------------------------------------------------
+
+Route::delete('delete', function(Request $request){
+    dd($request -> input ('fname'));
+});
+
+// -----------------------------------------------------------------------------
+
+// Route::patch('patch',function(){
+//     return view("form/patch-form");
+// });
+
+// Route::delete('delete',function(){
+//     return view("form/delete-form");
 // });
 
 // Route::post('home',function(Request $request){
@@ -124,6 +230,7 @@ use Illuminate\Http\Request;
 // Route::delete('home',function(){
 //     return "Welcome delete";
 // });
+
 
 
 
@@ -148,48 +255,51 @@ use Illuminate\Http\Request;
 //});
 
 
+// ----------------------------------------------------------
+
+//Routes for input -> getdetail
+
 Route::get('input',function(){
     return view('form/input');
 });
 
-Route::post('/form',function(Request $request){
-     dd($request->all());
- });
-
-
+// Route::post('/form',function(Request $request){
+//      dd($request->all());
+//  });
 
 
 Route::post('/form',function(Request $request){
      return view('form/getdetail', $request->all());
 });
 
+// ----------------------------------------------------------
 
 // Route::get('/master',function(){
 //     return view('Layouts/master');
 // });
 
-Route::get('home',function(){
-    return view('home');
-});
+// Route::get('home',function(){
+//     return view('home');
+// });
 
 
-Route::get('about',function(){
-    return view('pages/about');
-});
+// Route::get('about',function(){
+//     return view('pages/about');
+// });
 
 
 
-Route::get('photo',function(){
-    return view('pages/photo');
-});
+// Route::get('photo',function(){
+//     return view('pages/photo');
+// });
 
-Route::get('contact',function(){
-    return view('pages/contact');
-});
+// Route::get('contact',function(){
+//     return view('pages/contact');
+// });
 
-Route::get('employee',function(){
-    return view('employee/employeelist');
-});
+// Route::get('employee',function(){
+//     return view('employee/employeelist');
+// });
 
 
 // Route::get('input',function(){
@@ -211,3 +321,4 @@ Route::get('employee',function(){
 
 
 
+?>
