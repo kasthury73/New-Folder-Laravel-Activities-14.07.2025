@@ -263,8 +263,8 @@
                     </div>
                     <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
                         <ul class="nav flex-column">
-                            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2 active"
-                                    aria-current="page" href="#"> <svg class="bi" aria-hidden="true">
+                            <li class="nav-item"><a class="nav-link d-flex align-items-center gap-2 active"
+                                    aria-current="page" href="/home"> <svg class="bi" aria-hidden="true">
                                         <use xlink:href="#house-fill"></use>
                                     </svg>
                                     Home
@@ -287,20 +287,20 @@
                                     </svg>
                                    Photo
                                 </a> </li>
-                            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#"> <svg
+                            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="/employeelist"> <svg
                                         class="bi" aria-hidden="true">
                                         <use xlink:href="#graph-up"></use>
                                     </svg>
-                                    Reports
+                                    EmployeeList
                                 </a> </li>
-                            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#"> <svg
+                            {{-- <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#"> <svg
                                         class="bi" aria-hidden="true">
                                         <use xlink:href="#puzzle"></use>
                                     </svg>
                                     Integrations
                                 </a> </li>
-                        </ul>
-                        <h6
+                        </ul> --}}
+                        {{-- <h6
                             class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-body-secondary text-uppercase">
                             <span>Saved reports</span> <a class="link-secondary" href="#" aria-label="Add a new report">
                                 <svg class="bi" aria-hidden="true">
@@ -310,8 +310,8 @@
                             <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#"> <svg
                                         class="bi" aria-hidden="true">
                                         <use xlink:href="#file-earmark-text"></use>
-                                    </svg>
-                                    Current month
+                                    </svg> --}}
+                                    {{-- Current month
                                 </a> </li>
                             <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#"> <svg
                                         class="bi" aria-hidden="true">
@@ -324,28 +324,28 @@
                                         <use xlink:href="#file-earmark-text"></use>
                                     </svg>
                                     Social engagement
-                                </a> </li>
-                            <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#"> <svg
+                                </a> </li> --}}
+                            {{-- <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#"> <svg
                                         class="bi" aria-hidden="true">
                                         <use xlink:href="#file-earmark-text"></use>
                                     </svg>
                                     Year-end sale
-                                </a> </li>
-                        </ul>
+                                </a> </li> --}}
+                        {{-- </ul>
                         <hr class="my-3">
                         <ul class="nav flex-column mb-auto">
                             <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#"> <svg
                                         class="bi" aria-hidden="true">
                                         <use xlink:href="#gear-wide-connected"></use>
                                     </svg>
-                                    Settings
-                                </a> </li>
+                                    Settings --}}
+                                {{-- </a> </li>
                             <li class="nav-item"> <a class="nav-link d-flex align-items-center gap-2" href="#"> <svg
                                         class="bi" aria-hidden="true">
                                         <use xlink:href="#door-closed"></use>
                                     </svg>
                                     Sign out
-                                </a> </li>
+                                </a> </li> --}}
                         </ul>
                     </div>
                 </div>

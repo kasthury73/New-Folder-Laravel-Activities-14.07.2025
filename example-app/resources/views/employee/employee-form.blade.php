@@ -33,10 +33,11 @@
         <input type="text" name="phone" id="phone">
         <br>
 
+        <label>NIC-No</label>
+        <br>
         <input type="text" name="nic-no" id="nic-no">
         <br>
-        <label for="NIC-No"></label>
-        <br>
+
 
         <button>Submit</button>
         <br>

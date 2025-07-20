@@ -4,7 +4,8 @@
 
 
 <h1>This is a Contact Page</h1>
-<img src="images/jung.jpg">
+<p>Tel: +66(0)2 080 1000 # 5202 - 5205</p>
+<img src="images/Hype.jpg">
 
 
 @endsection

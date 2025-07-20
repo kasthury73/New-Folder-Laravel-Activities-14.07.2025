@@ -288,11 +288,18 @@ Route::post('/form',function(Request $request){
 });
 
 // ------------------------------------------------------------
+// Layouts/master.blade.php route
+Route::get('/master',function(){
+    return view('Layouts/master');
+});
 
 // Route::get('/master',function(){
-//     return view('Layouts/master');
+//     return view('employee/employeelist');
 // });
+// ------------------------------------------------------------
 
+//-------------------------------------------------------------
+//Layouts/main.blade,php Route
 Route::get('/main',function(){
     return view('Layouts/main');
 });
@@ -301,12 +308,9 @@ Route::get('home',function(){
     return view('home');
 });
 
-
 Route::get('about',function(){
     return view('pages/about');
 });
-
-
 
 Route::get('photo',function(){
     return view('pages/photo');
@@ -315,6 +319,13 @@ Route::get('photo',function(){
 Route::get('contact',function(){
     return view('pages/contact');
 });
+
+Route::get('employeelist',function(){
+    return view('employee/employeelist');
+});
+//-------------------------------------------------------------
+
+
 
 // Route::get('employee',function(){
 //     return view('employee/employeelist');
@@ -344,7 +355,8 @@ Route::post('/employee-detail',function(Request $request){
         'ID' => $data ['id'],
         'Name' => $data ['name'],
         'Age' => $data ['age'],
-        'Number' => $data ['phone']
+        'Number' => $data ['phone'],
+        'NICNo' => $data ['nic-no']
     ]);
 });
 

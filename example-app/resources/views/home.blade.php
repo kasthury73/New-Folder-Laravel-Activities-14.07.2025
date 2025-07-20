@@ -11,7 +11,7 @@
 @section('content')
 
 <h1>Welcome To My Home Page</h1>
-<img src="images/jhope.jpg">
+<img src="images/BTS.jpg" width="650">
 
 @endsection
 

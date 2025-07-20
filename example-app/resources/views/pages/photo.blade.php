@@ -6,10 +6,13 @@
 
 
 <h1>This is a photo page</h1>
-    <img src="images/flower.jpg">
-
-
-
+<img src=images/jimin.jpg width="95" >
+<img src="images/jungkooki.jpg" width="95">
+<img src="images/V.jpg" width="95">
+<img src="images/yongi.jpg" width="95">
+<img src="images/RM.jpg" width="95">
+<img src="images/hope.jpg" width="95">
+<img src="images/jina.jpg" width="95">
 @endsection
 
 
