@@ -14,32 +14,54 @@ use Illuminate\Http\Request;
 // Route::view('employeedetail', 'employee/employeedetail');
 // -----------------------------------------------------------------
 
-
+// -----------------------------------------------------------------
+//value assign in employeedetail form route
 
 // Route::get('employeedetail/{id}/{name}/{age}/{phone_no}',function($id,$name,$age,$phone_no){
 //     return view('employee/employeedetail',['id'=>$id,'name'=>$name,'age'=>$age,'phone_no'=>$phone_no]);
 // });
 
+//--------------------------------------------------------------------
+
+//laravel welcome page open route
 
 // Route::get('/', function () {
 //     return view('welcome');
 // });
+//--------------------------------------------------------------------
 
+
+//--------------------------------------------------------------------
+//about page route
 // Route::get('/about', function () {
 //     return view('pages/about');
 // });
+//--------------------------------------------------------------------
 
+
+//--------------------------------------------------------------------
+//photo page route
 // Route::get('/photo', function () {
 //     return view('pages/photo');
 // });
+//--------------------------------------------------------------------
 
+
+//--------------------------------------------------------------------
+//contact page route
 // Route::get('/contact', function () {
 //     return view('pages/contact');
 // });
+//--------------------------------------------------------------------
 
+
+//--------------------------------------------------------------------
+//home page route
 // Route::get('/home', function () {
 //     return view('/home');
 // });
+//--------------------------------------------------------------------
+
 
 //Route::view('/home', 'home',['name' => 'kasthui']);
 
@@ -79,16 +101,6 @@ use Illuminate\Http\Request;
 // Route::get('/', function () {
 //     return view('employee/employeelist');
 // });
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -181,19 +193,19 @@ Route::put('put',function(Request $request){
     dd($request -> input ('fname'));
 });
 
-// ----------------------------------------
+// ----------------------------------------------------
 
 Route::post('post',function(Request $request){
     dd($request -> input ('fname'));
 });
 
-// --------------------------------------------
+// -----------------------------------------------------
 
 Route::patch('patch', function(Request  $request){
     dd($request -> input ('fname'));
 });
 
-// -------------------------------------------------
+// -----------------------------------------------------
 
 Route::get('get', function(Request $request){
     dd($request -> input ('fname'));
@@ -232,12 +244,15 @@ Route::delete('delete', function(Request $request){
 // });
 
 
-
+// -----------------------------------------------------------------------------
+//employee-form route
 
 // Route::get('form',function(){
 //     return view ('employee/employee-form');
 // });
+
 //Route::view('form','employee/employee-form');
+//
 //Route::post('employee-detail',function(Request $request){
 //     $id =$request -> input  ("id");
 //     $name=$request -> input ("name");
@@ -255,7 +270,7 @@ Route::delete('delete', function(Request $request){
 //});
 
 
-// ----------------------------------------------------------
+// -------------------------------------------------------------
 
 //Routes for input -> getdetail
 
@@ -272,30 +287,34 @@ Route::post('/form',function(Request $request){
      return view('form/getdetail', $request->all());
 });
 
-// ----------------------------------------------------------
+// ------------------------------------------------------------
 
 // Route::get('/master',function(){
 //     return view('Layouts/master');
 // });
 
-// Route::get('home',function(){
-//     return view('home');
-// });
+Route::get('/main',function(){
+    return view('Layouts/main');
+});
+
+Route::get('home',function(){
+    return view('home');
+});
 
 
-// Route::get('about',function(){
-//     return view('pages/about');
-// });
+Route::get('about',function(){
+    return view('pages/about');
+});
 
 
 
-// Route::get('photo',function(){
-//     return view('pages/photo');
-// });
+Route::get('photo',function(){
+    return view('pages/photo');
+});
 
-// Route::get('contact',function(){
-//     return view('pages/contact');
-// });
+Route::get('contact',function(){
+    return view('pages/contact');
+});
 
 // Route::get('employee',function(){
 //     return view('employee/employeelist');
@@ -314,6 +333,20 @@ Route::post('/form',function(Request $request){
 // });
 
 
+Route::get('employee-form', function(){
+    return view('employee/employee-form');
+});
+
+
+Route::post('/employee-detail',function(Request $request){
+    $data= $request -> all();
+    return view('employee/employee-detail',[
+        'ID' => $data ['id'],
+        'Name' => $data ['name'],
+        'Age' => $data ['age'],
+        'Number' => $data ['phone']
+    ]);
+});
 
 
 

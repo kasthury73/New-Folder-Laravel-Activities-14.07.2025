@@ -17,29 +17,46 @@
             <h1> Details</h1>
 
                 <tr>
-                    <td><img src="{{asset('images/jin.jpg')}}"> </td>
-
+                    <td><img src="{{asset('images/jimin.jpg')}}" width="200"> </td>
                 </tr>
 
-            <tr>
-
+                <tr>
                     <td>ID :</td>
                     <td>{{$ID}}</td>
                 </tr>
+
                 <tr>
                     <td>Name :</td>
                     <td>{{$Name}}</td>
                 </tr>
+
                 <tr>
                     <td>Age :</td>
                     <td>{{$Age}}</td>
                 </tr>
+
                 <tr>
                     <td>Phone No :</td>
-                    <td>{{$Phone No}}</td>
+                    <td>
+                        @php
+                            $converted = Str::substr($Number,0,3);
+                        @endphp
+
+                        @if($converted === "077")
+                        Dialog number
+                        @elseif($converted === "075")
+                        Airetel number
+                        @else
+                        Slt number
+                        @endif
+                    </td>
                 </tr>
 
-
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
         </table>
         <hr color="purple">
 

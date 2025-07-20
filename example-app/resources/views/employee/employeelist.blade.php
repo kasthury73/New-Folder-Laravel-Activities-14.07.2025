@@ -44,7 +44,7 @@
             <tr>
                 <td>1001</td>
 
-                <td>Jhope</td>
+                <td>Jimin</td>
                 <td>29</td>
                 <td>+8224589745</td>
                 <td><a href="employeedetail/1001/Jhope/30/+8223589645">Jhope Details</a></td>
@@ -52,7 +52,7 @@
             <tr>
                 <td>1002</td>
 
-                <td>Jimin</td>
+                <td>Taehyung</td>
                 <td>30</td>
                 <td>+8223589645</td>
                 <td><a href="/employeedetail/1002/jimin/30/+8223589645">Jimin Details</a></td>

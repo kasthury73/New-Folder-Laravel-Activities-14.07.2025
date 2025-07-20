@@ -13,5 +13,6 @@
     @method('post')
     <input type="text" name="fname" id="fname">
     <input type="submit" value="post" name="_method">
+    </form>
 </body>
 </html>
