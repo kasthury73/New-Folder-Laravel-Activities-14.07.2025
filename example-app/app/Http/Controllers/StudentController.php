@@ -35,7 +35,7 @@ class StudentController extends Controller
      */
     public function show(string $id)
     {
-        return view('Student/show'); //link the show file path
+        return view('student/show'); //link the show file path
     }
 
     /**
@@ -51,7 +51,7 @@ class StudentController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        return $request->all();
     }
 
     /**
@@ -59,7 +59,7 @@ class StudentController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        return $id; 
     }
 }
 
