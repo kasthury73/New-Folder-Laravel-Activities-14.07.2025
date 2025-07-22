@@ -2,7 +2,7 @@
 use Illuminate\Support\Facades\Route;
 
 use Illuminate\Http\Request;
-
+use App\Http\Controllers\StudentController;
 
 // -----------------------------------------------------------------
 
@@ -133,9 +133,9 @@ use Illuminate\Http\Request;
 
 // -------------------------------------------------------------------------
 
-Route::get('my-form-post',function(){
-    return view('form/post-form');
-});
+// Route::get('my-form-post',function(){
+//     return view('form/post-form');
+// });
 
 // Route::post('post',function(){
 //     return ("post method");
@@ -143,9 +143,9 @@ Route::get('my-form-post',function(){
 
 // ----------------------------------------
 
-Route::get('my-form-get',function(){
-    return view('form/get-form');
-});
+// Route::get('my-form-get',function(){
+//     return view('form/get-form');
+// });
 
 // Route::get('get',function(){
 //     return ("get method");
@@ -153,9 +153,9 @@ Route::get('my-form-get',function(){
 
 // -------------------------------------------
 
-Route::get('my-form-patch',function(){
-    return view('form/patch-form');
-});
+// Route::get('my-form-patch',function(){
+//     return view('form/patch-form');
+// });
 
 // Route::patch('patch',function(){
 //     return('patch method');
@@ -163,19 +163,19 @@ Route::get('my-form-patch',function(){
 
 // ----------------------------------------------
 
-Route::get('my-form-put',function(){
-    return view('form/put-form');
-});
+// Route::get('my-form-put',function(){
+//     return view('form/put-form');
+// });
 
-Route::put('put',function(){
-    return('put method');
-});
+// Route::put('put',function(){
+//     return('put method');
+// });
 
 // --------------------------------------------------
 
-Route::get('my-form-delete',function(){
-    return view('form/delete-form');
-});
+// Route::get('my-form-delete',function(){
+//     return view('form/delete-form');
+// });
 
 // Route::delete('delete',function(){
 //     return ('delete method');
@@ -189,33 +189,33 @@ Route::get('my-form-delete',function(){
 //     return view("form/put-form");
 // });
 
-Route::put('put',function(Request $request){
-    dd($request -> input ('fname'));
-});
+// Route::put('put',function(Request $request){
+//     dd($request -> input ('fname'));
+// });
 
 // ----------------------------------------------------
 
-Route::post('post',function(Request $request){
-    dd($request -> input ('fname'));
-});
+// Route::post('post',function(Request $request){
+//     dd($request -> input ('fname'));
+// });
 
 // -----------------------------------------------------
 
-Route::patch('patch', function(Request  $request){
-    dd($request -> input ('fname'));
-});
+// Route::patch('patch', function(Request  $request){
+//     dd($request -> input ('fname'));
+// });
 
 // -----------------------------------------------------
 
-Route::get('get', function(Request $request){
-    dd($request -> input ('fname'));
-});
+// Route::get('get', function(Request $request){
+//     dd($request -> input ('fname'));
+// });
 
 // -----------------------------------------------------
 
-Route::delete('delete', function(Request $request){
-    dd($request -> input ('fname'));
-});
+// Route::delete('delete', function(Request $request){
+//     dd($request -> input ('fname'));
+// });
 
 // -----------------------------------------------------------------------------
 
@@ -274,24 +274,24 @@ Route::delete('delete', function(Request $request){
 
 //Routes for input -> getdetail
 
-Route::get('input',function(){
-    return view('form/input');
-});
+// Route::get('input',function(){
+//     return view('form/input');
+// });
 
 // Route::post('/form',function(Request $request){
 //      dd($request->all());
 //  });
 
 
-Route::post('/form',function(Request $request){
-     return view('form/getdetail', $request->all());
-});
+// Route::post('/form',function(Request $request){
+//      return view('form/getdetail', $request->all());
+// });
 
 // ------------------------------------------------------------
 // Layouts/master.blade.php route
-Route::get('/master',function(){
-    return view('Layouts/master');
-});
+// Route::get('/master',function(){
+//     return view('Layouts/master');
+// });
 
 // Route::get('/master',function(){
 //     return view('employee/employeelist');
@@ -300,29 +300,29 @@ Route::get('/master',function(){
 
 //-------------------------------------------------------------
 //Layouts/main.blade,php Route
-Route::get('/main',function(){
-    return view('Layouts/main');
-});
+// Route::get('/main',function(){
+//     return view('Layouts/main');
+// });
 
-Route::get('home',function(){
-    return view('home');
-});
+// Route::get('home',function(){
+//     return view('home');
+// });
 
-Route::get('about',function(){
-    return view('pages/about');
-});
+// Route::get('about',function(){
+//     return view('pages/about');
+// });
 
-Route::get('photo',function(){
-    return view('pages/photo');
-});
+// Route::get('photo',function(){
+//     return view('pages/photo');
+// });
 
-Route::get('contact',function(){
-    return view('pages/contact');
-});
+// Route::get('contact',function(){
+//     return view('pages/contact');
+// });
 
-Route::get('employeelist',function(){
-    return view('employee/employeelist');
-});
+// Route::get('employeelist',function(){
+//     return view('employee/employeelist');
+// });
 //-------------------------------------------------------------
 
 
@@ -344,25 +344,27 @@ Route::get('employeelist',function(){
 // });
 
 
-Route::get('employee-form', function(){
-    return view('employee/employee-form');
-});
+// Route::get('employee-form', function(){
+//     return view('employee/employee-form');
+// });
 
 
-Route::post('/employee-detail',function(Request $request){
-    $data= $request -> all();
-    return view('employee/employee-detail',[
-        'ID' => $data ['id'],
-        'Name' => $data ['name'],
-        'Age' => $data ['age'],
-        'Number' => $data ['phone'],
-        'NICNo' => $data ['nic-no']
-    ]);
-});
+// Route::post('/employee-detail',function(Request $request){
+//     $data= $request -> all();
+//     return view('employee/employee-detail',[
+//         'ID' => $data ['id'],
+//         'Name' => $data ['name'],
+//         'Age' => $data ['age'],
+//         'Number' => $data ['phone'],
+//         'NICNo' => $data ['nic-no']
+//     ]);
+// });
 
 
 
 
+
+Route::resource('student', StudentController::class);
 
 
 

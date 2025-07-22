@@ -2,7 +2,7 @@
 
 @extends('Layouts.main')
 
- @section('sidebar')
+@section('sidebar')
 
 @parent
 
